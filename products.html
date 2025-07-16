@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - My Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        
+        <div class="logo">
+            <h1>BookWorld</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="product-details.html">products</a></li>
+
+            </ul>
+        </nav>
+
+    <h1>Product Details</h1>
+</header>
+    <main>
+        <section class="search-filter">
+            <h2>Search Products</h2>
+            <input type="text" id="search" placeholder="Search products..." class="search-bar">
+        </section>
+        <section class="product-grid" id="product-list">
+            <div class="book" onclick="openModal('Book Title 3', 'Author Name 3', 'Seller Name', 'seller@example.com')">
+                <img src="img/book.png" alt="1984">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <p class="price">$15.00</p>
+                <button class="btn" onclick="buyBook(event, '1984')">Buy Now</button>
+                <li><a href="cart.html">BUY NOW</a></li>
+            </div>
+            <div class="book" onclick="openModal('Book Title 3', 'Author Name 3', 'Seller Name', 'seller@example.com')">
+                <img src="img/Screenshot 2024-12-06 020159.png" alt="1984">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <p class="price">$15.00</p>
+                <button class="btn" onclick="buyBook(event, '1984')">Buy Now</button>
+                <li><a href="cart.html">BUY NOW</a></li>
+            </div><div class="book" onclick="openModal('Book Title 3', 'Author Name 3', 'Seller Name', 'seller@example.com')">
+                <img src="img/Screenshot 2024-12-06 020150.png" alt="1984">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+                <p class="price">$15.00</p>
+                <button class="btn" onclick="buyBook(event, '1984')">Buy Now</button>
+                <li><a href="cart.html">BUY NOW</a></li>
+            </div><div class="book" onclick="openModal('Book Title 3', 'Author Name 3', 'Seller Name', 'seller@example.com')">
+                <img src="img/Screenshot 2024-12-06 015414.png" alt="1984">
+              
+            <!-- Dynamic products from script.js -->
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookWorld - Add Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BookWorld</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h2>List Your Book</h2>
+        <form id="addBookForm">
+            <label for="bookName">Book Title:</label>
+            <input type="text" id="bookName" name="bookName" required>
+
+            <label for="authorName">Author Name:</label>
+            <input type="text" id="authorName" name="authorName" required>
+
+            <label for="bookCategory">Category:</label>
+            <select id="bookCategory" name="bookCategory" required>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="bookCondition">Condition:</label>
+            <select id="bookCondition" name="bookCondition" required>
+                <option value="new">New</option>
+                <option value="good">Good</option>
+                <option value="acceptable">Acceptable</option>
+            </select>
+
+            <label for="bookPrice">Price (If selling):</label>
+            <input type="number" id="bookPrice" name="bookPrice" placeholder="Enter 0 if donating" required>
+
+            <label for="bookDescription">Description:</label>
+            <textarea id="bookDescription" name="bookDescription" rows="4" required></textarea>
+
+            <label for="bookImage">Upload Book Image:</label>
+            <input type="file" id="bookImage" name="bookImage" accept="image/*">
+
+            <button type="submit">Submit Book</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BookWorld. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
